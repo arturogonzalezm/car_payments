@@ -1,0 +1,80 @@
+/* Customize the number input */
+.stNumberInput > div > div > div > input {
+    color: #F63366; /* Text color */
+    /*background-color: #FFFFFF; !* Background color *!*/
+    border-color: #F63366; /* Border color */
+}
+
+/* Customize the spinner buttons */
+.stNumberInput > div > div > div > div {
+    color: #293745; /* Spinner button color */
+}
+
+/* Customize the content box */
+.content-box {
+    border: 2px solid #F63366; /* Vibrant pink border color */
+    border-radius: 2px; /* Rounded corners */
+    padding: 10px; /* Padding inside the box */
+    margin: 10px; /* Margin around the box */
+    background-color: #F63366; /* Light background color */
+}
+
+/* Customize h2 headings inside content box */
+/*.content-box h2 {*/
+/*    color: #293745; !* Sets the color of the h2 headings to dark blue *!*/
+/*    font-size: 24px; !* Font size for h2 headings *!*/
+/*    text-align: left; !* Align text to the left *!*/
+/*}*/
+
+/* Additional custom styles for your application, if needed */
+div.block-container.css-18e3th9.egzxvld2 {
+    margin-top: -9em;
+}
+
+div.css-1ht1j8u.e16fv1kl0 {
+    text-align: center;
+}
+
+div.css-wnm74r.e16fv1kl3 {
+    margin-left: 30%;
+    margin-right: 20%;
+}
+
+div.css-1r6slb0.e1tzin5v2 {
+    background-color: rgb(63, 79, 107);
+    padding: 3% 3% 3% 3%;
+    border-radius: 5px;
+}
+
+div.css-12w0qpk.e1tzin5v2 {
+    background-color: rgba(220, 220, 220, 0.60);
+    padding: 3% 3% 3% 3%;
+    border-radius: 5px;
+}
+
+/* Hiding elements */
+div.css-r698ls.e8zbici2, footer.css-ipbk5a.egzxvld4, footer.css-12gp8ed.eknhn3m4, div.vg-tooltip-element, css-sfupiu.egzxvld4, footer {
+    display: none;
+}
+
+footer.css-ipbk5a.egzxvld4 {
+    display: none;
+}
+
+footer.css-12gp8ed.eknhn3m4 {
+    display: none;
+}
+
+div.vg-tooltip-element {
+    display: none;
+}
+
+css-sfupiu egzxvld4 {
+    display: none;
+}
+
+footer {
+
+    visibility: hidden;
+
+}
