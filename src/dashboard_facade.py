@@ -1,3 +1,5 @@
+"""Module for managing the dashboard facade which integrates UI components with data calculation."""
+
 import pandas as pd
 import streamlit as st
 import plotly.express as px
@@ -10,10 +12,20 @@ class DashboardFacade:
     """Facade that coordinates the loan calculation and the UI components."""
 
     def __init__(self):
+        """
+        Constructor for the DashboardFacade class.
+        :return: None
+        :rtype: None
+        """
         self.ui = DashboardUI()
         self.calculator = LoanCalculator()
 
     def setup_dashboard(self):
+        """
+        Method to setup the dashboard.
+        :return: None
+        :rtype: None
+        """
         self.ui.display_title(
             "<h2 style='text-align: left; color: #F63366; font-size: 24px;'>Car Loan Payment Dashboard</h2>")
         car_price, annual_interest_rate, loan_term_months, monthly_admin_fee = self.ui.display_columns_inputs()
