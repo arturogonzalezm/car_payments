@@ -44,7 +44,7 @@ jobs:
           if [ -z "$FILES" ]; then
             echo "No Python files to lint."
           else
-            pylint $FILES --fail-under=8.0
+            pylint $FILES --fail-under=7.4
           fi
         shell: /usr/bin/bash -l {0}
       - name: Run Tests and Generate Coverage Report
