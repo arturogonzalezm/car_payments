@@ -45,10 +45,12 @@ class DashboardFacade:
                 months_since_start = min(months_since_start, loan_term_months)
                 remaining_months = loan_term_months - months_since_start
                 st.markdown(
-                    f'<div class="content-box" style="background-color: #293745; padding: 60px; padding-left: 20px;"><h4 style="color: #F63366; font-size: 20px;">Months Paid: {months_since_start}</h4></div>',
+                    f'<div class="content-box" style="background-color: #293745; padding: 60px; padding-left: 20px;">'
+                    f'<h4 style="color: #F63366; font-size: 20px;">Months Paid: {months_since_start}</h4></div>',
                     unsafe_allow_html=True)
                 st.markdown(
-                    f'<div class="content-box" style="background-color: #293745; padding: 60px; padding-left: 20px;"><h4 style="color: #F63366; font-size: 20px;">Remaining Months: {remaining_months}</h4></div>',
+                    f'<div class="content-box" style="background-color: #293745; padding: 60px; padding-left: 20px;">'
+                    f'<h4 style="color: #F63366; font-size: 20px;">Remaining Months: {remaining_months}</h4></div>',
                     unsafe_allow_html=True)
 
             self.ui.display_summary_boxes(monthly_balances_df)
