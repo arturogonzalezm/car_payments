@@ -1,5 +1,4 @@
 .idea
-<<<<<<< HEAD
 .idea/*
 __pycache__
 *.pyc
@@ -8,7 +7,3 @@ __pycache__
 *.pyw
 *.pyz
 *.pywz
-
-=======
-.idea/
->>>>>>> 75ed1aee9a960782c7edb80f147d90878fe12d60
