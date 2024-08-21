@@ -1,3 +1,8 @@
+<<<<<<< HEAD
+=======
+"""Module for managing the dashboard facade which integrates UI components with data calculation."""
+
+>>>>>>> 75ed1aee9a960782c7edb80f147d90878fe12d60
 import pandas as pd
 import streamlit as st
 import plotly.express as px
@@ -10,10 +15,26 @@ class DashboardFacade:
     """Facade that coordinates the loan calculation and the UI components."""
 
     def __init__(self):
+<<<<<<< HEAD
+=======
+        """
+        Constructor for the DashboardFacade class.
+        :return: None
+        :rtype: None
+        """
+>>>>>>> 75ed1aee9a960782c7edb80f147d90878fe12d60
         self.ui = DashboardUI()
         self.calculator = LoanCalculator()
 
     def setup_dashboard(self):
+<<<<<<< HEAD
+=======
+        """
+        Method to setup the dashboard.
+        :return: None
+        :rtype: None
+        """
+>>>>>>> 75ed1aee9a960782c7edb80f147d90878fe12d60
         self.ui.display_title(
             "<h2 style='text-align: left; color: #F63366; font-size: 24px;'>Car Loan Payment Dashboard</h2>")
         car_price, annual_interest_rate, loan_term_months, monthly_admin_fee = self.ui.display_columns_inputs()
@@ -33,10 +54,19 @@ class DashboardFacade:
                 months_since_start = min(months_since_start, loan_term_months)
                 remaining_months = loan_term_months - months_since_start
                 st.markdown(
+<<<<<<< HEAD
                     f'<div class="content-box" style="background-color: #293745; padding: 60px; padding-left: 20px;"><h4 style="color: #F63366; font-size: 20px;">Months Paid: {months_since_start}</h4></div>',
                     unsafe_allow_html=True)
                 st.markdown(
                     f'<div class="content-box" style="background-color: #293745; padding: 60px; padding-left: 20px;"><h4 style="color: #F63366; font-size: 20px;">Remaining Months: {remaining_months}</h4></div>',
+=======
+                    f'<div class="content-box" style="background-color: #293745; padding: 60px; padding-left: 20px;">'
+                    f'<h4 style="color: #F63366; font-size: 20px;">Months Paid: {months_since_start}</h4></div>',
+                    unsafe_allow_html=True)
+                st.markdown(
+                    f'<div class="content-box" style="background-color: #293745; padding: 60px; padding-left: 20px;">'
+                    f'<h4 style="color: #F63366; font-size: 20px;">Remaining Months: {remaining_months}</h4></div>',
+>>>>>>> 75ed1aee9a960782c7edb80f147d90878fe12d60
                     unsafe_allow_html=True)
 
             self.ui.display_summary_boxes(monthly_balances_df)
